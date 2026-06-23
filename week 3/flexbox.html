@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox1</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(244, 244, 212);
+    }
+
+    .container {
+        display: flex;
+        max-width: 1024px;
+        margin: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .a {
+        flex: 1;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .b {
+        flex: 1;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .c {
+        flex: 1;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .a img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .b img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .c img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    h2 {
+        margin: 8px;
+    }
+
+    p {
+        color: #8b8b8b;
+        margin: 0;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="a">
+            <img src="images/custom-img-017-copyright.jpg" alt="Residential projects">
+            <h2>Residential projects</h2>
+            <p>We build sustainable and modern homes for comfortable living.</p>
+        </div>
+        <div class="b">
+            <img src="images/custom-img-018-copyright.jpg" alt="Commercial projects">
+            <h2>Commercial projects</h2>
+            <p>We design and construct innovative commercial spaces for businesses.</p>
+        </div>
+        <div class="c">
+            <img src="images/custom-img-019-copyright.jpg" alt="Infrastructure works">
+            <h2>Infrastructure works</h2>
+            <p>We develop robust infrastructure solutions for communities and businesses.</p>
+        </div>
+    </div>
+</body>
