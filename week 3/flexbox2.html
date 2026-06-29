@@ -19,6 +19,25 @@
             align-items: center;
             padding: 10px 20px;
         }
+
+        button.quote-btn {
+            background-color: #ffffff;
+            color: #6c757d;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px 24px;
+            border: 1px solid #6c757d;
+            border-radius: 6px;
+        }
+
+        button.consult-btn {
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 0px;
+        }
     </style>
 </head>
 
@@ -29,21 +48,21 @@
             <img src="images/PositivusLogo.png" alt="Logo" style="height: 40px;">
         </div>
 
-        <div>
+        <div style="display: flex; align-items: center; gap: 30px;">
             <a>About us</a>
             <a>Services</a>
             <a>Use Cases</a>
             <a>Pricing</a>
             <a>Blog</a>
-            <button>Request a quote</button>
+            <button class="quote-btn">Request a quote</button>
         </div>
+
     </header>
     <div>
         <p>Navigating the digital landscape for success</p>
         <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including
             SEO, PPC, social media marketing, and content creation.</p>
-
-        <button>Book a consultation</button>
+        <button class="consult-btn">Book a free consultation</button>
     </div>
 </body>
 
