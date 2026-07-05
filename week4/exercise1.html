@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox1</title>
+</head>
+
+<style>
+    body {
+        background-color: #F6F5EF;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .plain-header {
+        background-color: #ffffff;
+        padding: 20px;
+        max-width: 1024px;
+        margin: 20px auto;
+        border-radius: 8px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .links-zone a {
+        margin: 0 12px;
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .plain-header a.active {
+        color: #ff5722;
+        font-weight: bold;
+    }
+
+    .plain-utils {
+        margin-top: 0;
+    }
+
+    .container {
+        display: flex;
+        max-width: 1024px;
+        margin: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .a {
+        flex: 1;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .b {
+        flex: 1;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .c {
+        flex: 1;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .a img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .b img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .c img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    h2 {
+        margin: 8px;
+    }
+
+    p {
+        color: #8b8b8b;
+        margin: 0;
+    }
+</style>
+
+<body>
+    <div class="plain-header">
+
+        <div class="logo-zone">
+            <img src="images/elementra.jpg" alt="Elementra Logo">
+        </div>
+
+        <div class="links-zone">
+            <a href="#">Home</a>
+            <a href="#" class="active">Services</a>
+            <a href="#">Work</a>
+            <a href="#">Project Details</a>
+            <a href="#">Contact</a>
+        </div>
+
+
+        <div class="plain-utils">
+            <span>📞 555-123-4567</span> | <strong>Contact Button</strong>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="a">
+            <img src="images/custom-img-017-copyright.jpg" alt="Residential projects">
+            <h2>Residential projects</h2>
+            <p>We build sustainable and modern homes for comfortable living.</p>
+        </div>
+        <div class="b">
+            <img src="images/custom-img-018-copyright.jpg" alt="Commercial projects">
+            <h2>Commercial spaces</h2>
+            <p>We create efficient, inspiring workspaces for businesses of all sizes.</p>
+        </div>
+        <div class="c">
+            <img src="images/custom-img-019-copyright.jpg" alt="Infrastructure works">
+            <h2>Infrastructure works</h2>
+            <p>We develop strong, reliable infrastructure for growing communities.</p>
+        </div>
+    </div>
+
+</body>
