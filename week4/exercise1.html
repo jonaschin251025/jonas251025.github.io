@@ -32,10 +32,16 @@
         display: block;
     }
 
+    .links-zone {
+        display: flex;
+        gap: 20px;
+    }
+
     .links-zone a {
         margin: 0 12px;
         text-decoration: none;
         color: #333333;
+        white-space: nowrap;
     }
 
     .plain-header a.active {
@@ -44,7 +50,11 @@
     }
 
     .plain-utils {
+        display: flex;
+        align-items: center;
+        gap: 15px;
         margin-top: 0;
+        white-space: nowrap;
     }
 
     .container {
