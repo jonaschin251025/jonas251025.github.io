@@ -85,7 +85,7 @@
 
         .consult-btn {
             display: inline-block;
-            background-color: #000000;
+            background-color: #191a23;
             color: #ffffff;
             border: none;
             padding: 18px 32px;
@@ -121,6 +121,32 @@
             width: auto;
             max-width: 130px;
             object-fit: contain;
+        }
+
+        .services-intro {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 60px 5% 20px 5%;
+            box-sizing: border-box;
+        }
+
+        .services-title-badge {
+            background-color: #b9ff66;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        .services-description {
+            font-size: 18px;
+            color: #000000;
+            max-width: 580px;
+            margin: 0;
+            line-height: 1.5;
         }
 
         .services-section {
@@ -306,6 +332,13 @@
                 font-size: 40px;
             }
 
+            .services-intro {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+                padding-top: 40px;
+            }
+
             .services-section {
                 grid-template-columns: 1fr;
             }
@@ -337,6 +370,10 @@
                 flex: 0 0 40%;
                 max-height: 30px;
                 margin-bottom: 15px;
+            }
+
+            .services-title-badge {
+                font-size: 26px;
             }
 
             .services-section {
@@ -379,7 +416,7 @@
             <h1>Navigating the digital landscape for success</h1>
             <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
                 including SEO, PPC, social media marketing, and content creation.</p>
-            <button class="consult-btn">Book a free consultation</button>
+            <button class="consult-btn">Book a consultation</button>
         </div>
         <div class="intro-illustration">
             <img src="images/Illustration.png" alt="Illustration">
@@ -394,6 +431,12 @@
         <img src="images/Netflix.png" alt="Netflix Logo">
         <img src="images/zoom.png" alt="Zoom Logo">
     </section>
+
+    <div class="services-intro">
+        <h2 class="services-title-badge">Services</h2>
+        <p class="services-description">At our digital marketing agency, we offer a range of services to help businesses
+            grow and succeed online. These services include:</p>
+    </div>
 
     <section class="services-section">
 
