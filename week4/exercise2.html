@@ -44,9 +44,6 @@
             border: 1px solid #000000;
             padding: 14px 24px;
             border-radius: 12px;
-            text-decoration: none;
-            color: #000000;
-            font-family: Arial, sans-serif;
             font-size: 16px;
             font-weight: bold;
             cursor: pointer;
@@ -93,7 +90,6 @@
             border: none;
             padding: 18px 32px;
             border-radius: 14px;
-            font-family: Arial, sans-serif;
             font-size: 16px;
             font-weight: bold;
             cursor: pointer;
@@ -129,15 +125,13 @@
 
         .services-section {
             padding: 40px 5%;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 40px;
-            flex-wrap: wrap;
             box-sizing: border-box;
         }
 
         .service-card {
-            flex: 1;
-            min-width: 350px;
             border: 2px solid #191a23;
             border-radius: 30px;
             padding: 50px;
@@ -165,6 +159,19 @@
         .card-green .text-highlight {
             background-color: #ffffff;
             color: #000000;
+        }
+
+        .card-dark {
+            background-color: #191a23;
+        }
+
+        .card-dark .text-highlight {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .card-dark .card-link span {
+            color: #ffffff;
         }
 
         .card-left-content {
@@ -195,7 +202,6 @@
             display: flex;
             align-items: center;
             gap: 15px;
-            text-decoration: none;
             color: #000000;
             font-size: 18px;
             margin-top: 30px;
@@ -235,6 +241,10 @@
             .intro-text h1 {
                 font-size: 40px;
             }
+
+            .services-section {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media screen and (max-width: 600px) {
@@ -254,7 +264,6 @@
 
             .service-card {
                 padding: 30px;
-                min-width: 100%;
             }
 
             .text-highlight {
@@ -309,10 +318,10 @@
                     <span class="text-highlight">Search engine</span>
                     <span class="text-highlight">optimization</span>
                 </div>
-                <a href="#" class="card-link">
+                <div class="card-link">
                     <img src="images/green_icon.png" alt="Learn More" class="arrow-icon-img">
                     <span>Learn more</span>
-                </a>
+                </div>
             </div>
             <div class="card-illustration">
                 <img src="images/magnifier.png" alt="Search Engine Optimization Illustration">
@@ -325,13 +334,77 @@
                     <span class="text-highlight">Pay-per-click</span>
                     <span class="text-highlight">advertising</span>
                 </div>
-                <a href="#" class="card-link">
+                <div class="card-link">
                     <img src="images/white_Icon.png" alt="Learn More" class="arrow-icon-img">
                     <span>Learn more</span>
-                </a>
+                </div>
             </div>
             <div class="card-illustration">
                 <img src="images/selecting_value.png" alt="Pay-per-click advertising Illustration">
+            </div>
+        </div>
+
+        <div class="service-card card-dark">
+            <div class="card-left-content">
+                <div class="card-title">
+                    <span class="text-highlight">Social media</span>
+                    <span class="text-highlight">marketing</span>
+                </div>
+                <div class="card-link">
+                    <img src="images/white_Icon.png" alt="Learn More" class="arrow-icon-img">
+                    <span>Learn more</span>
+                </div>
+            </div>
+            <div class="card-illustration">
+                <img src="images/browser_emoticon.png" alt="Social Media Marketing Illustration">
+            </div>
+        </div>
+
+        <div class="service-card card-gray">
+            <div class="card-left-content">
+                <div class="card-title">
+                    <span class="text-highlight">Email</span>
+                    <span class="text-highlight">marketing</span>
+                </div>
+                <div class="card-link">
+                    <img src="images/green_icon.png" alt="Learn More" class="arrow-icon-img">
+                    <span>Learn more</span>
+                </div>
+            </div>
+            <div class="card-illustration">
+                <img src="images/messages.png" alt="Email Marketing Illustration">
+            </div>
+        </div>
+
+        <div class="service-card card-green">
+            <div class="card-left-content">
+                <div class="card-title">
+                    <span class="text-highlight">Content</span>
+                    <span class="text-highlight">creation</span>
+                </div>
+                <div class="card-link">
+                    <img src="images/white_Icon.png" alt="Learn More" class="arrow-icon-img">
+                    <span>Learn more</span>
+                </div>
+            </div>
+            <div class="card-illustration">
+                <img src="images/browser.png" alt="Content Creation Illustration">
+            </div>
+        </div>
+
+        <div class="service-card card-dark">
+            <div class="card-left-content">
+                <div class="card-title">
+                    <span class="text-highlight">Analytics and</span>
+                    <span class="text-highlight">optimization</span>
+                </div>
+                <div class="card-link">
+                    <img src="images/white_Icon.png" alt="Learn More" class="arrow-icon-img">
+                    <span>Learn more</span>
+                </div>
+            </div>
+            <div class="card-illustration">
+                <img src="images/analytics.png" alt="Analytics and Optimization Illustration">
             </div>
         </div>
 
