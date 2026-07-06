@@ -127,6 +127,93 @@
             object-fit: contain;
         }
 
+        .services-section {
+            padding: 40px 5%;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+
+        .service-card {
+            flex: 1;
+            min-width: 350px;
+            border: 2px solid #191a23;
+            border-radius: 30px;
+            padding: 50px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            position: relative;
+            box-shadow: 0px 5px 0px #191a23;
+        }
+
+        .card-gray {
+            background-color: #f3f3f3;
+        }
+
+        .card-gray .text-highlight {
+            background-color: #b9ff66;
+            color: #000000;
+        }
+
+        .card-green {
+            background-color: #b9ff66;
+        }
+
+        .card-green .text-highlight {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .card-left-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            min-height: 160px;
+        }
+
+        .card-title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+
+        .text-highlight {
+            font-size: 26px;
+            font-weight: bold;
+            padding: 0px 10px;
+            border-radius: 7px;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .card-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        .arrow-icon-img {
+            width: 41px;
+            height: 41px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .card-illustration img {
+            max-width: 210px;
+            height: auto;
+            object-fit: contain;
+        }
+
         @media screen and (max-width: 1024px) {
             .nav-links {
                 display: none;
@@ -159,6 +246,19 @@
                 flex: 0 0 40%;
                 max-height: 30px;
                 margin-bottom: 15px;
+            }
+
+            .services-section {
+                gap: 25px;
+            }
+
+            .service-card {
+                padding: 30px;
+                min-width: 100%;
+            }
+
+            .text-highlight {
+                font-size: 20px;
             }
         }
     </style>
@@ -199,6 +299,42 @@
         <img src="images/Notion.png" alt="Notion Logo">
         <img src="images/Netflix.png" alt="Netflix Logo">
         <img src="images/zoom.png" alt="Zoom Logo">
+    </section>
+
+    <section class="services-section">
+
+        <div class="service-card card-gray">
+            <div class="card-left-content">
+                <div class="card-title">
+                    <span class="text-highlight">Search engine</span>
+                    <span class="text-highlight">optimization</span>
+                </div>
+                <a href="#" class="card-link">
+                    <img src="images/green_icon.png" alt="Learn More" class="arrow-icon-img">
+                    <span>Learn more</span>
+                </a>
+            </div>
+            <div class="card-illustration">
+                <img src="images/magnifier.png" alt="Search Engine Optimization Illustration">
+            </div>
+        </div>
+
+        <div class="service-card card-green">
+            <div class="card-left-content">
+                <div class="card-title">
+                    <span class="text-highlight">Pay-per-click</span>
+                    <span class="text-highlight">advertising</span>
+                </div>
+                <a href="#" class="card-link">
+                    <img src="images/white_Icon.png" alt="Learn More" class="arrow-icon-img">
+                    <span>Learn more</span>
+                </a>
+            </div>
+            <div class="card-illustration">
+                <img src="images/selecting_value.png" alt="Pay-per-click advertising Illustration">
+            </div>
+        </div>
+
     </section>
 
 </body>
