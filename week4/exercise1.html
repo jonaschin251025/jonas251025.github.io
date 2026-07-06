@@ -11,11 +11,14 @@
     body {
         background-color: #F6F5EF;
         font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
     }
 
     .plain-header {
         background-color: #ffffff;
         padding: 20px 40px;
+        width: 90%;
         max-width: 1400px;
         margin: 20px auto;
         border-radius: 8px;
@@ -38,10 +41,8 @@
     }
 
     .links-zone a {
-        margin: 0 12px;
         text-decoration: none;
         color: #333333;
-        white-space: nowrap;
     }
 
     .plain-header a.active {
@@ -52,9 +53,7 @@
     .plain-utils {
         display: flex;
         align-items: center;
-        gap: 15px;
-        margin-top: 0;
-        white-space: nowrap;
+        gap: 20px;
     }
 
     .phone-info {
@@ -68,57 +67,41 @@
         width: auto;
     }
 
-    .hamburger-menu {
-        display: none;
-        height: 24px;
-        width: auto;
-        cursor: pointer;
+    .contact-btn {
+        background-color: #ff5722;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 24px;
+        border-radius: 8px;
+        font-weight: 500;
+    }
+
+    .contact-btn:hover {
+        background-color: #e04c1e;
     }
 
     .container {
         display: flex;
-        max-width: 1024px;
-        margin: auto;
+        width: 90%;
+        max-width: 1400px;
+        margin: 20px auto;
         gap: 20px;
-        padding: 20px;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    .a {
-        flex: 1;
-        background-color: #ffffff;
-        border-radius: 8px;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .b {
-        flex: 1;
-        background-color: #ffffff;
-        border-radius: 8px;
-        padding: 10px;
-        text-align: center;
-    }
-
+    .a,
+    .b,
     .c {
         flex: 1;
         background-color: #ffffff;
         border-radius: 8px;
-        padding: 10px;
+        padding: 20px;
         text-align: center;
     }
 
-    .a img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-
-    .b img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-
+    .a img,
+    .b img,
     .c img {
         width: 100%;
         height: auto;
@@ -126,12 +109,13 @@
     }
 
     h2 {
-        margin: 8px;
+        margin: 16px 0 8px 0;
     }
 
     p {
         color: #8b8b8b;
         margin: 0;
+        line-height: 1.5;
     }
 </style>
 
@@ -142,8 +126,6 @@
             <img src="images/elementra.png" alt="Elementra Logo">
         </div>
 
-        <img src="images/hamburger.png" alt="Menu" class="hamburger-menu">
-
         <div class="links-zone">
             <a href="#">Home</a>
             <a href="#" class="active">Services</a>
@@ -152,9 +134,12 @@
             <a href="#">Contact</a>
         </div>
 
-
         <div class="plain-utils">
-            <span>📞 555-123-4567</span> | <strong>Contact Button</strong>
+            <div class="phone-info">
+                <img src="images/phone.jpg  " alt="Phone" class="phone-icon">
+                <span>555-123-4567</span>
+            </div>
+            <a href="#" class="contact-btn">Contact</a>
         </div>
 
     </div>
@@ -178,3 +163,5 @@
     </div>
 
 </body>
+
+</html>
