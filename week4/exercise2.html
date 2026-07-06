@@ -55,7 +55,7 @@
             color: #ffffff;
         }
 
-        .hero-section {
+        .intro-section {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -95,13 +95,13 @@
             cursor: pointer;
         }
 
-        .hero-illustration {
+        .intro-illustration {
             flex: 1;
             display: flex;
             justify-content: flex-end;
         }
 
-        .hero-illustration img {
+        .intro-illustration img {
             width: 100%;
             max-width: 500px;
             height: auto;
@@ -139,7 +139,6 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            position: relative;
             box-shadow: 0px 5px 0px #191a23;
         }
 
@@ -220,12 +219,77 @@
             object-fit: contain;
         }
 
+        .cta-section {
+            padding: 60px 5% 80px 5%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cta-container {
+            background-color: #f3f3f3;
+            border-radius: 30px;
+            padding: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            gap: 40px;
+            width: 100%;
+            max-width: 1140px;
+        }
+
+        .cta-content {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .cta-content h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+            color: #000000;
+        }
+
+        .cta-content p {
+            font-size: 18px;
+            color: #000000;
+            line-height: 1.5;
+            margin: 0 0 25px 0;
+        }
+
+        .proposal-btn {
+            background-color: #191a23;
+            color: #ffffff;
+            border: none;
+            padding: 20px 35px;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .cta-illustration {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: -90px;
+            margin-bottom: -90px;
+        }
+
+        .cta-illustration img {
+            width: 360px;
+            height: auto;
+            object-fit: contain;
+        }
+
         @media screen and (max-width: 1024px) {
             .nav-links {
                 display: none;
             }
 
-            .hero-section {
+            .intro-section {
                 flex-direction: column-reverse;
                 text-align: left;
             }
@@ -234,7 +298,7 @@
                 max-width: 100%;
             }
 
-            .hero-illustration {
+            .intro-illustration {
                 justify-content: center;
             }
 
@@ -244,6 +308,23 @@
 
             .services-section {
                 grid-template-columns: 1fr;
+            }
+
+            .cta-container {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 40px;
+            }
+
+            .cta-illustration {
+                width: 100%;
+                justify-content: center;
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+
+            .cta-illustration img {
+                max-width: 280px;
             }
         }
 
@@ -269,6 +350,10 @@
             .text-highlight {
                 font-size: 20px;
             }
+
+            .cta-content h2 {
+                font-size: 26px;
+            }
         }
     </style>
 </head>
@@ -289,17 +374,17 @@
         </nav>
     </header>
 
-    <main class="hero-section">
+    <section class="intro-section">
         <div class="intro-text">
             <h1>Navigating the digital landscape for success</h1>
             <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
                 including SEO, PPC, social media marketing, and content creation.</p>
             <button class="consult-btn">Book a free consultation</button>
         </div>
-        <div class="hero-illustration">
+        <div class="intro-illustration">
             <img src="images/Illustration.png" alt="Illustration">
         </div>
-    </main>
+    </section>
 
     <section class="logos-container">
         <img src="images/amazon.png" alt="Amazon Logo">
@@ -335,7 +420,7 @@
                     <span class="text-highlight">advertising</span>
                 </div>
                 <div class="card-link">
-                    <img src="images/green_Icon.png" alt="Learn More" class="arrow-icon-img">
+                    <img src="images/white_Icon.png" alt="Learn More" class="arrow-icon-img">
                     <span>Learn more</span>
                 </div>
             </div>
@@ -383,7 +468,7 @@
                     <span class="text-highlight">creation</span>
                 </div>
                 <div class="card-link">
-                    <img src="images/green_Icon.png" alt="Learn More" class="arrow-icon-img">
+                    <img src="images/white_Icon.png" alt="Learn More" class="arrow-icon-img">
                     <span>Learn more</span>
                 </div>
             </div>
@@ -408,6 +493,20 @@
             </div>
         </div>
 
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2>Let's make things happen</h2>
+                <p>Contact us today to learn more about how our digital marketing services can help your business grow
+                    and succeed online.</p>
+                <button class="proposal-btn">Get your free proposal</button>
+            </div>
+            <div class="cta-illustration">
+                <img src="images/makethingshappen.png" alt="Let's Make Things Happen Illustration">
+            </div>
+        </div>
     </section>
 
 </body>
