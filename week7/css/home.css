@@ -428,3 +428,37 @@
         gap: 20px;
     }
 }
+
+.process-item {
+    border: 1px solid #191a23;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #f3f3f3;
+}
+
+.process-item.active {
+    background-color: #b9ff66;
+
+}
+
+.process-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.number {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.toggle-btn {
+    margin-left: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    cursor: pointer;
+}
