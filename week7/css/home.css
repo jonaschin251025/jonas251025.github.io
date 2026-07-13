@@ -462,3 +462,47 @@
     background: transparent;
     cursor: pointer;
 }
+
+.process-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.process-item {
+    border: 1px solid #191a23;
+    border-radius: 45px;
+    padding: 40px;
+    margin-bottom: 20px;
+    background-color: #f3f3f3;
+    box-shadow: 0px 5px 0px #191a23;
+    transition: all 0.3s ease;
+}
+
+.process-item.active {
+    background-color: #b9ff66;
+}
+
+.process-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.number {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.process-header h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.process-content {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #191a23;
+    font-size: 18px;
+    line-height: 1.5;
+}
