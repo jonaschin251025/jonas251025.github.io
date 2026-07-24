@@ -476,3 +476,9 @@
     font-size: 18px;
     line-height: 1.5;
 }
+
+.toggle-icon {
+    margin-left: auto;
+    width: 58px;
+    height: 58px;
+}
