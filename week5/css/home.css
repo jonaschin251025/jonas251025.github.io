@@ -1,7 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
     box-sizing: border-box;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+}
+
+.quote-btn {
+    background-color: #ffffff;
+    border: 1px solid #191a23;
+    border-radius: 14px;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #191a23;
+}
+
+.hamburger-icon {
+    display: none;
+    width: 28px;
+    height: auto;
 }
 
 .intro-section,
@@ -57,7 +101,8 @@ body {
     border-radius: 14px;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
 
 .intro-illustration {
@@ -113,6 +158,7 @@ body {
     max-width: 580px;
     margin: 0;
     line-height: 1.5;
+    text-align: left;
 }
 
 .services-section {
@@ -198,6 +244,7 @@ body {
     color: #000000;
     font-size: 18px;
     margin-top: 30px;
+    text-decoration: none;
 }
 
 .arrow-icon-img {
@@ -259,7 +306,6 @@ body {
     border-radius: 14px;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .cta-illustration {
@@ -402,6 +448,7 @@ body {
     margin-left: auto;
     width: 58px;
     height: 58px;
+    flex-shrink: 0;
 }
 
 .team-section {
@@ -489,21 +536,44 @@ body {
     border-radius: 14px;
     font-size: 18px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        width: 28px;
+        height: auto;
+    }
+
+    .header {
+        padding: 20px 5%;
+    }
+
     .intro-section {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: left;
     }
 
     .intro-text {
+        width: 100%;
         max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .consult-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
     }
 
     .intro-illustration {
         justify-content: center;
+        width: 100%;
     }
 
     .intro-text h1 {
@@ -512,13 +582,33 @@ body {
 
     .services-intro {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
         gap: 15px;
         padding-top: 40px;
     }
 
+    .services-description {
+        text-align: center;
+        margin: 0 auto;
+    }
+
     .service-card {
         width: 100%;
+        padding: 40px 30px;
+    }
+
+    .card-link span {
+        display: none;
+    }
+
+    .card-link {
+        margin-top: 20px;
+    }
+
+    .card-illustration img {
+        max-width: 125px;
+        height: auto;
     }
 
     .cta-container {
@@ -527,12 +617,56 @@ body {
         padding: 50px 40px;
     }
 
+    .cta-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .proposal-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
     .cta-illustration {
         display: none;
     }
 
     .team-card {
         width: 48.5%;
+    }
+
+    .process-item {
+        padding: 20px 24px;
+        border-radius: 30px;
+        margin-bottom: 16px;
+        box-shadow: 0px 4px 0px #191a23;
+    }
+
+    .process-header {
+        gap: 15px;
+    }
+
+    .number {
+        font-size: 32px;
+    }
+
+    .process-header h3 {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .toggle-icon {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+    }
+
+    .process-content {
+        font-size: 14px;
+        margin-top: 15px;
+        padding-top: 15px;
     }
 }
 
@@ -556,8 +690,13 @@ body {
 
     .section-header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
         gap: 20px;
+    }
+
+    .header-description {
+        text-align: center;
     }
 }
 
@@ -578,10 +717,6 @@ body {
 
     .services-section {
         row-gap: 25px;
-    }
-
-    .service-card {
-        padding: 30px;
     }
 
     .text-highlight {
