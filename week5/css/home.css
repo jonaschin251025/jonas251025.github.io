@@ -482,3 +482,9 @@
     width: 58px;
     height: 58px;
 }
+
+.team-section {
+    padding: 40px 5%;
+    box-sizing: border-box;
+    width: 100%;
+}
