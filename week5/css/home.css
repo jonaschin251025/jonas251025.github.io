@@ -1,10 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro-section,
+.logos-container,
+.services-intro,
+.services-section,
+.cta-section,
+.case-studies-section,
+.process-section,
+.team-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
 .intro-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
     gap: 40px;
-    box-sizing: border-box;
 }
 
 .intro-text {
@@ -55,7 +77,8 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 40px 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
     gap: 20px;
 }
 
@@ -70,8 +93,8 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 60px 5% 20px 5%;
-    box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 .services-title-badge {
@@ -93,14 +116,16 @@
 }
 
 .services-section {
-    padding: 40px 5%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 40px;
-    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
 }
 
 .service-card {
+    width: 48.5%;
     border: 2px solid #191a23;
     border-radius: 30px;
     padding: 50px;
@@ -189,8 +214,8 @@
 }
 
 .cta-section {
-    padding: 60px 5% 80px 5%;
-    box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
 }
@@ -205,7 +230,6 @@
     box-sizing: border-box;
     gap: 40px;
     width: 100%;
-    max-width: 100%;
 }
 
 .cta-content {
@@ -254,10 +278,10 @@
 }
 
 .case-studies-section {
-    width: 100%;
-    padding: 40px 5%;
-    box-sizing: border-box;
-    margin: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .section-header {
@@ -291,14 +315,14 @@
     color: #ffffff;
     border-radius: 40px;
     padding: 60px;
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    gap: 60px;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
 }
 
 .case-card {
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -310,7 +334,7 @@
 }
 
 .case-text {
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 24px;
 }
@@ -318,21 +342,19 @@
 .case-link {
     color: #b9ff66;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 18px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
 }
 
 .process-section {
-    padding: 40px 5%;
-    box-sizing: border-box;
-    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .process-container {
     width: 100%;
-    max-width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -383,19 +405,21 @@
 }
 
 .team-section {
-    padding: 40px 5%;
-    box-sizing: border-box;
-    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .team-grid {
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .team-card {
+    width: 31.5%;
     background-color: #ffffff;
     border: 1px solid #191a23;
     border-radius: 45px;
@@ -454,6 +478,7 @@
 .team-btn-wrapper {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .see-team-btn {
@@ -492,8 +517,8 @@
         padding-top: 40px;
     }
 
-    .services-section {
-        grid-template-columns: 100%;
+    .service-card {
+        width: 100%;
     }
 
     .cta-container {
@@ -506,16 +531,20 @@
         display: none;
     }
 
-    .team-grid {
-        grid-template-columns: 50% 50%;
+    .team-card {
+        width: 48.5%;
     }
 }
 
 @media (max-width: 968px) {
     .case-studies-dark-box {
-        grid-template-columns: 100%;
+        flex-direction: column;
         gap: 40px;
         padding: 40px;
+    }
+
+    .case-card {
+        width: 100%;
     }
 
     .case-card-border {
@@ -548,7 +577,7 @@
     }
 
     .services-section {
-        gap: 25px;
+        row-gap: 25px;
     }
 
     .service-card {
@@ -563,8 +592,8 @@
         font-size: 26px;
     }
 
-    .team-grid {
-        grid-template-columns: 100%;
+    .team-card {
+        width: 100%;
     }
 
     .team-btn-wrapper {
