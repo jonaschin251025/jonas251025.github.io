@@ -11,27 +11,46 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
 }
 
 .blue-frame {
     background: linear-gradient(135deg, #020024, #090979, #00d4ff);
-    padding: 40px 50px;
-    border-radius: 16px;
-    max-width: 550px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    padding: 40px;
+    border-radius: 15px;
+    width: 500px;
 }
 
 .image-container {
     position: relative;
     width: 85%;
+    margin: auto;
 }
 
 .card-image {
     width: 100%;
-    height: auto;
-    display: block;
     border-radius: 10px;
+}
+
+.badge-top {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px;
+    border-radius: 8px;
+    width: 140px;
+}
+
+.badge-top h3 {
+    font-size: 18px;
+}
+
+.arrow {
+    width: 14px;
+}
+
+.badge-top p {
+    font-size: 12px;
+    color: #333333;
 }
