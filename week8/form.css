@@ -1,0 +1,25 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 500px;
+}
+
+#fname,
+#lname,
+#dob,
+#email,
+#homepage {
+    border-radius: 25px;
+    padding: 8px 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#bio {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}

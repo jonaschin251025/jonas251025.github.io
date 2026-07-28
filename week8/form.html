@@ -3,6 +3,7 @@
 
 <head>
     <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 
 <body>
@@ -10,23 +11,39 @@
     <h2>Registration Form</h2>
 
     <form action="#">
-        <label for="fname">First Name*:</label><br>
-        <input type="text" id="fname" name="fname" required><br><br>
+        <div class="grid">
+            <div>
+                <label for="fname">First Name*:</label><br>
+                <input type="text" id="fname" name="fname" required>
+            </div>
 
-        <label for="lname">Last Name*:</label><br>
-        <input type="text" id="lname" name="lname" required><br><br>
+            <div>
+                <label for="lname">Last Name*:</label><br>
+                <input type="text" id="lname" name="lname" required>
+            </div>
 
-        <label for="dob">Date of Birth*:</label><br>
-        <input type="date" id="dob" name="dob" required><br><br>
+            <div>
+                <label for="dob">Date of Birth*:</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </div>
 
-        <label for="email">Email Address*:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+            <div>
+                <label for="email">Email Address*:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-        <label for="homepage">Homepage URL:</label><br>
-        <input type="url" id="homepage" name="homepage"><br><br>
+            <div>
+                <label for="homepage">Homepage URL:</label><br>
+                <input type="url" id="homepage" name="homepage">
+            </div>
 
-        <label for="color">Favourite Colors:</label><br>
-        <input type="color" id="color" name="color"><br><br>
+            <div>
+                <label for="color">Favourite Colors:</label><br>
+                <input type="color" id="color" name="color">
+            </div>
+        </div>
+
+        <br>
 
         <label for="bio">Bio / Self Introduction:</label><br>
         <textarea id="bio" name="bio" rows="4" cols="30"></textarea><br><br>
